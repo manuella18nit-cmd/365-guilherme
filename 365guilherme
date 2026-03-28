@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Guilherme 💖</title>
+
+  <style>
+    body {
+      background: linear-gradient(#ffc0cb, #ffe4ec);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #ff4d6d;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .subtitle {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(255, 105, 135, 0.3);
+      font-size: 20px;
+      max-width: 400px;
+      margin: auto;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ff85a2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>365 motivos para amar você, Guilherme 💕</h1>
+  <div class="subtitle">Desde o nosso dia 20 💖</div>
+
+  <div class="card" id="motivo"></div>
+
+  <div class="footer">Feito com amor só pra você 💌</div>
+
+  <script>
+    const motivos = [
+      "Porque você me faz sorrir sem esforço",
+      "Porque seu abraço é meu lugar favorito",
+      "Porque eu amo seu jeitinho bobo",
+      "Porque você me acalma só de estar perto",
+      "Porque você é o meu porto seguro",
+      "Porque tudo fica melhor com você",
+      "Porque seu sorriso ilumina meu dia",
+      "Porque você me entende como ninguém",
+      "Porque eu amo cada detalhe seu",
+      "Porque você é simplesmente você 💕"
+    ];
+
+    const hoje = new Date();
+    const inicio = new Date("2024-01-20"); // NOSSO DIA 💖
+
+    const diff = Math.floor((hoje - inicio) / (1000 * 60 * 60 * 24));
+    const index = diff % motivos.length;
+
+    document.getElementById("motivo").innerText = motivos[index];
+  </script>
+
+</body>
+</html>
